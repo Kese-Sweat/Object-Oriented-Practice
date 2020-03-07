@@ -36,8 +36,44 @@ function it(description, contents){
   //
   // Only add code to *THIS* section!
   
-  // ????????
-  // ????????
+  function Dog(dog) {
+    this.status = 'normal'
+
+   
+    
+    if (dog && dog.hungry === false || dog && dog.hungry === true) {
+        this.hungry = dog.hungry
+}else {
+    this.hungry = true
+}
+  }
+
+  function Human(foo) {
+
+    if (foo && foo.cool === false || foo && foo.cool === true){
+        this.cool = foo.cool
+    }else{
+
+        this.cool = false
+    }
+
+
+      
+
+  }
+  Human.prototype.pet = function (doggy){
+      doggy.status = 'happy'
+      doggy.color = "black"
+      
+      
+      }
+ 
+Human.prototype.feed = function (julia){
+
+}
+
+
+
   // ????????
   
   
@@ -50,7 +86,8 @@ function it(description, contents){
   
   var sadie = new Dog({
     color: "black",
-    hungry: false
+    hungry: false,
+    
   });
   
   var moonshine = new Dog({
