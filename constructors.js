@@ -39,7 +39,10 @@ function it(description, contents){
   function Dog(dog) {
     this.status = 'normal'
 
-   
+   if (dog && dog.color === 'black' ||dog && dog.color === 'black'){
+        this.color = 'black'
+   }
+
     
     if (dog && dog.hungry === false || dog && dog.hungry === true) {
         this.hungry = dog.hungry
@@ -63,12 +66,13 @@ function it(description, contents){
   }
   Human.prototype.pet = function (doggy){
       doggy.status = 'happy'
-      doggy.color = "black"
+      
       
       
       }
  
-Human.prototype.feed = function (julia){
+Human.prototype.feed = function (dog) {
+    dog.hungry = false
 
 }
 
